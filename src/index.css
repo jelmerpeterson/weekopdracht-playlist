@@ -100,11 +100,12 @@ button:hover {
 
 form {
   background-color: #3b3b3b;
+  margin-top: 30px;
   padding: 10px 15px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
 }
 
 input {
@@ -126,4 +127,28 @@ input {
 .about {
   display: flex;
   flex-direction: column;
+}
+
+.search-number {
+  border-radius: 50px;
+  border: none;
+  padding: 8px;
+  margin-bottom: 20px;
+
+  text-indent: 10px;
+  position: relative;
+  background-color: rgba(205, 205, 205, 0.934);
+}
+
+.search-number:focus {
+  background-color: white;
+  outline: none;
+}
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+.search {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
 }

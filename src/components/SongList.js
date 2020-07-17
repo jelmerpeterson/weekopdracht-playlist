@@ -1,8 +1,8 @@
 import React from "react";
 
-const SongList = ({ songs, deleteSong }) => {
-  const songList = songs.length ? (
-    songs.map((item) => {
+const SongList = ({ filteredSongs, deleteSong }) => {
+  const songList = filteredSongs.length ? (
+    filteredSongs.map((item) => {
       return (
         <tr key={item.id} className="content-header">
           <td>{item.title}</td>
