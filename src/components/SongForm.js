@@ -13,9 +13,14 @@ class SongForm extends Component {
   }
 
   handleChange = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
+    const { name, value, type, checked } = e.target;
+    type === "checkbox"
+      ? this.setState({
+          [name]: checked,
+        })
+      : this.setState({
+          [name]: value,
+        });
   };
 
   handleSubmit = (e) => {
@@ -45,26 +50,38 @@ class SongForm extends Component {
           placeholder="Artiest"
           onChange={this.handleChange}
         />
-        <label>Genre:</label>
-        <input
-          type="text"
-          name="genre"
+
+        <select
           value={this.state.genre}
-          placeholder="Genre"
+          name="genre"
           onChange={this.handleChange}
-        />
-        <label>
-          <span>⭐ :</span>
-        </label>
-        <input
-          type="number"
-          min="1"
-          max="5"
-          name="rating"
           className="rating"
+        >
+          <option value="">Genre</option>
+          <option value="jazz">Jazz</option>
+          <option value="soul">Soul</option>
+          <option value="rock">Rock</option>
+          <option value="dance">Dance</option>
+          <option value="disco">Disco</option>
+        </select>
+        <label>
+          <span>⭐</span>
+        </label>
+
+        <select
           value={this.state.rating}
+          name="rating"
           onChange={this.handleChange}
-        />
+          className="rating"
+        >
+          <option value=""> Hoeveel sterren? </option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
         <button type="submit">Voeg Toe</button>
       </form>
     );

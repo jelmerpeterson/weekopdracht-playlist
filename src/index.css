@@ -111,3 +111,19 @@ input {
   margin: 10px;
   padding: 5px 5px;
 }
+
+.rating {
+  margin-right: 20px;
+  margin-left: 10px;
+  padding: 5px 5px;
+}
+
+.giphy-embed {
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}

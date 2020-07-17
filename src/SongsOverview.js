@@ -37,7 +37,7 @@ class SongOverview extends Component {
             <th className="song-row__item">Song</th>
             <th className="song-row__item">Artiest</th>
             <th className="song-row__item">Genre</th>
-            <th className="song-row__item">Rating</th>
+            <th className="song-row__item">Sterren</th>
             <th className="song-row__item"></th>
           </tr>
         </table>

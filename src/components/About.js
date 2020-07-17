@@ -19,6 +19,13 @@ function About() {
         allemaal even niet meer zitten maar na deze week ben ik er weer helemaal
         overheen en heb zin om nog meer met React te gaan oefenen!
       </p>
+      <iframe
+        src="https://giphy.com/embed/lnlAifQdenMxW"
+        width="480"
+        height="274"
+        frameBorder="0"
+        class="giphy-embed"
+      ></iframe>
     </div>
   );
 }
